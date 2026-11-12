@@ -1,0 +1,1164 @@
+{
+ "tot": [
+  {
+   "active_users": 254,
+   "newusers": 220,
+   "sessions": 299,
+   "engaged_sessions": 169,
+   "average_session_duration": 215.93,
+   "conversions": 9
+  }
+ ],
+ "totP": [
+  {
+   "active_users": 210,
+   "newusers": 176,
+   "sessions": 251,
+   "engaged_sessions": 135,
+   "average_session_duration": 236.66,
+   "conversions": 2
+  }
+ ],
+ "nvr": [
+  {
+   "new_vs_returning": "new",
+   "active_users": 220,
+   "newusers": 220,
+   "sessions": 220,
+   "engaged_sessions": 124,
+   "average_session_duration": 228.06,
+   "conversions": 3
+  },
+  {
+   "new_vs_returning": "returning",
+   "active_users": 49,
+   "newusers": 0,
+   "sessions": 72,
+   "engaged_sessions": 41,
+   "average_session_duration": 175.3,
+   "conversions": 3
+  },
+  {
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "newusers": 0,
+   "sessions": 7,
+   "engaged_sessions": 4,
+   "average_session_duration": 252.4,
+   "conversions": 3
+  }
+ ],
+ "nvrP": [
+  {
+   "new_vs_returning": "new",
+   "active_users": 176,
+   "newusers": 176,
+   "sessions": 176,
+   "engaged_sessions": 95,
+   "average_session_duration": 228.33,
+   "conversions": 1
+  },
+  {
+   "new_vs_returning": "returning",
+   "active_users": 49,
+   "newusers": 0,
+   "sessions": 66,
+   "engaged_sessions": 35,
+   "average_session_duration": 265.85,
+   "conversions": 1
+  },
+  {
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "newusers": 0,
+   "sessions": 9,
+   "engaged_sessions": 5,
+   "average_session_duration": 185.7,
+   "conversions": 0
+  }
+ ],
+ "daily": [
+  {
+   "date": "2026-10-26",
+   "new_vs_returning": "new",
+   "active_users": 30,
+   "sessions": 30,
+   "engaged_sessions": 16,
+   "average_session_duration": 57.38,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-26",
+   "new_vs_returning": "returning",
+   "active_users": 4,
+   "sessions": 6,
+   "engaged_sessions": 3,
+   "average_session_duration": 367.49,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-26",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 0,
+   "engaged_sessions": 0,
+   "average_session_duration": 190.54,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-27",
+   "new_vs_returning": "new",
+   "active_users": 22,
+   "sessions": 22,
+   "engaged_sessions": 12,
+   "average_session_duration": 337.67,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-27",
+   "new_vs_returning": "returning",
+   "active_users": 7,
+   "sessions": 8,
+   "engaged_sessions": 5,
+   "average_session_duration": 249.88,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-27",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 57.85,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-28",
+   "new_vs_returning": "new",
+   "active_users": 21,
+   "sessions": 21,
+   "engaged_sessions": 14,
+   "average_session_duration": 144.26,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-28",
+   "new_vs_returning": "returning",
+   "active_users": 7,
+   "sessions": 11,
+   "engaged_sessions": 5,
+   "average_session_duration": 151.05,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-28",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 0,
+   "engaged_sessions": 0,
+   "average_session_duration": 270.01,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-29",
+   "new_vs_returning": "new",
+   "active_users": 23,
+   "sessions": 23,
+   "engaged_sessions": 14,
+   "average_session_duration": 243.17,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-29",
+   "new_vs_returning": "returning",
+   "active_users": 7,
+   "sessions": 10,
+   "engaged_sessions": 6,
+   "average_session_duration": 193.93,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-29",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 1,
+   "engaged_sessions": 1,
+   "average_session_duration": 203.15,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-30",
+   "new_vs_returning": "new",
+   "active_users": 27,
+   "sessions": 27,
+   "engaged_sessions": 12,
+   "average_session_duration": 320.74,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-30",
+   "new_vs_returning": "returning",
+   "active_users": 9,
+   "sessions": 13,
+   "engaged_sessions": 6,
+   "average_session_duration": 218.24,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-30",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 259.23,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-31",
+   "new_vs_returning": "new",
+   "active_users": 23,
+   "sessions": 23,
+   "engaged_sessions": 12,
+   "average_session_duration": 312.57,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-31",
+   "new_vs_returning": "returning",
+   "active_users": 7,
+   "sessions": 10,
+   "engaged_sessions": 5,
+   "average_session_duration": 386.33,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-31",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 355.17,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-01",
+   "new_vs_returning": "new",
+   "active_users": 30,
+   "sessions": 30,
+   "engaged_sessions": 15,
+   "average_session_duration": 218.8,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-01",
+   "new_vs_returning": "returning",
+   "active_users": 8,
+   "sessions": 8,
+   "engaged_sessions": 5,
+   "average_session_duration": 380.09,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-01",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 61.84,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-02",
+   "new_vs_returning": "new",
+   "active_users": 40,
+   "sessions": 40,
+   "engaged_sessions": 28,
+   "average_session_duration": 335.89,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-02",
+   "new_vs_returning": "returning",
+   "active_users": 7,
+   "sessions": 10,
+   "engaged_sessions": 7,
+   "average_session_duration": 164.92,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-02",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 1,
+   "engaged_sessions": 0,
+   "average_session_duration": 82.15,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-03",
+   "new_vs_returning": "new",
+   "active_users": 26,
+   "sessions": 26,
+   "engaged_sessions": 13,
+   "average_session_duration": 305.81,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-03",
+   "new_vs_returning": "returning",
+   "active_users": 9,
+   "sessions": 12,
+   "engaged_sessions": 8,
+   "average_session_duration": 218.74,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-03",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 1,
+   "engaged_sessions": 1,
+   "average_session_duration": 140.02,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "new_vs_returning": "new",
+   "active_users": 33,
+   "sessions": 33,
+   "engaged_sessions": 19,
+   "average_session_duration": 294.3,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "new_vs_returning": "returning",
+   "active_users": 9,
+   "sessions": 12,
+   "engaged_sessions": 8,
+   "average_session_duration": 94.33,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 0,
+   "engaged_sessions": 0,
+   "average_session_duration": 124.0,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-05",
+   "new_vs_returning": "new",
+   "active_users": 38,
+   "sessions": 38,
+   "engaged_sessions": 18,
+   "average_session_duration": 41.47,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-05",
+   "new_vs_returning": "returning",
+   "active_users": 4,
+   "sessions": 8,
+   "engaged_sessions": 4,
+   "average_session_duration": 243.88,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-05",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 382.08,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-06",
+   "new_vs_returning": "new",
+   "active_users": 34,
+   "sessions": 34,
+   "engaged_sessions": 22,
+   "average_session_duration": 354.82,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-06",
+   "new_vs_returning": "returning",
+   "active_users": 9,
+   "sessions": 12,
+   "engaged_sessions": 6,
+   "average_session_duration": 77.27,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-06",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 0,
+   "engaged_sessions": 0,
+   "average_session_duration": 394.48,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-07",
+   "new_vs_returning": "new",
+   "active_users": 25,
+   "sessions": 25,
+   "engaged_sessions": 13,
+   "average_session_duration": 58.93,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-07",
+   "new_vs_returning": "returning",
+   "active_users": 3,
+   "sessions": 7,
+   "engaged_sessions": 3,
+   "average_session_duration": 76.53,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-07",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 354.76,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-08",
+   "new_vs_returning": "new",
+   "active_users": 24,
+   "sessions": 24,
+   "engaged_sessions": 11,
+   "average_session_duration": 165.06,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-08",
+   "new_vs_returning": "returning",
+   "active_users": 8,
+   "sessions": 11,
+   "engaged_sessions": 5,
+   "average_session_duration": 345.62,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-08",
+   "new_vs_returning": "(not set)",
+   "active_users": 0,
+   "sessions": 1,
+   "engaged_sessions": 1,
+   "average_session_duration": 70.92,
+   "conversions": 0
+  }
+ ],
+ "src": [
+  {
+   "session_source_medium": "(direct) / (none)",
+   "new_vs_returning": "new",
+   "sessions": 18,
+   "engaged_sessions": 9,
+   "average_session_duration": 164.65,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "(direct) / (none)",
+   "new_vs_returning": "returning",
+   "sessions": 8,
+   "engaged_sessions": 6,
+   "average_session_duration": 212.77,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "google / organic",
+   "new_vs_returning": "new",
+   "sessions": 36,
+   "engaged_sessions": 27,
+   "average_session_duration": 68.75,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "google / organic",
+   "new_vs_returning": "returning",
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 123.79,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "naver / organic",
+   "new_vs_returning": "new",
+   "sessions": 5,
+   "engaged_sessions": 3,
+   "average_session_duration": 134.22,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "naver / organic",
+   "new_vs_returning": "returning",
+   "sessions": 4,
+   "engaged_sessions": 3,
+   "average_session_duration": 270.14,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "google / cpc",
+   "new_vs_returning": "new",
+   "sessions": 24,
+   "engaged_sessions": 9,
+   "average_session_duration": 266.02,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "google / cpc",
+   "new_vs_returning": "returning",
+   "sessions": 3,
+   "engaged_sessions": 2,
+   "average_session_duration": 37.3,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "naver.com / cpc",
+   "new_vs_returning": "new",
+   "sessions": 11,
+   "engaged_sessions": 9,
+   "average_session_duration": 251.41,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "naver.com / cpc",
+   "new_vs_returning": "returning",
+   "sessions": 6,
+   "engaged_sessions": 5,
+   "average_session_duration": 127.1,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "example.com / referral",
+   "new_vs_returning": "new",
+   "sessions": 13,
+   "engaged_sessions": 6,
+   "average_session_duration": 36.74,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "m.search.naver.com / referral",
+   "new_vs_returning": "new",
+   "sessions": 22,
+   "engaged_sessions": 13,
+   "average_session_duration": 137.73,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "m.search.naver.com / referral",
+   "new_vs_returning": "returning",
+   "sessions": 6,
+   "engaged_sessions": 3,
+   "average_session_duration": 190.94,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "(not set)",
+   "new_vs_returning": "new",
+   "sessions": 8,
+   "engaged_sessions": 6,
+   "average_session_duration": 238.63,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "(not set)",
+   "new_vs_returning": "returning",
+   "sessions": 1,
+   "engaged_sessions": 0,
+   "average_session_duration": 21.48,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "daum / organic",
+   "new_vs_returning": "new",
+   "sessions": 18,
+   "engaged_sessions": 12,
+   "average_session_duration": 247.74,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "daum / organic",
+   "new_vs_returning": "returning",
+   "sessions": 6,
+   "engaged_sessions": 2,
+   "average_session_duration": 276.56,
+   "conversions": 2
+  }
+ ],
+ "srcP": [
+  {
+   "session_source_medium": "(direct) / (none)",
+   "new_vs_returning": "new",
+   "sessions": 21,
+   "engaged_sessions": 7,
+   "average_session_duration": 26.68,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "(direct) / (none)",
+   "new_vs_returning": "returning",
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "average_session_duration": 87.99,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "google / organic",
+   "new_vs_returning": "new",
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "average_session_duration": 34.29,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "google / organic",
+   "new_vs_returning": "returning",
+   "sessions": 1,
+   "engaged_sessions": 0,
+   "average_session_duration": 45.29,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "naver / organic",
+   "new_vs_returning": "new",
+   "sessions": 22,
+   "engaged_sessions": 18,
+   "average_session_duration": 131.15,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "naver / organic",
+   "new_vs_returning": "returning",
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 215.77,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "google / cpc",
+   "new_vs_returning": "new",
+   "sessions": 11,
+   "engaged_sessions": 5,
+   "average_session_duration": 62.53,
+   "conversions": 1
+  },
+  {
+   "session_source_medium": "google / cpc",
+   "new_vs_returning": "returning",
+   "sessions": 4,
+   "engaged_sessions": 2,
+   "average_session_duration": 69.7,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "naver.com / cpc",
+   "new_vs_returning": "new",
+   "sessions": 33,
+   "engaged_sessions": 21,
+   "average_session_duration": 88.45,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "naver.com / cpc",
+   "new_vs_returning": "returning",
+   "sessions": 4,
+   "engaged_sessions": 1,
+   "average_session_duration": 15.35,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "example.com / referral",
+   "new_vs_returning": "new",
+   "sessions": 33,
+   "engaged_sessions": 18,
+   "average_session_duration": 281.05,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "example.com / referral",
+   "new_vs_returning": "returning",
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "average_session_duration": 168.31,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "m.search.naver.com / referral",
+   "new_vs_returning": "new",
+   "sessions": 33,
+   "engaged_sessions": 15,
+   "average_session_duration": 72.4,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "m.search.naver.com / referral",
+   "new_vs_returning": "returning",
+   "sessions": 5,
+   "engaged_sessions": 2,
+   "average_session_duration": 265.76,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "(not set)",
+   "new_vs_returning": "new",
+   "sessions": 26,
+   "engaged_sessions": 21,
+   "average_session_duration": 294.75,
+   "conversions": 0
+  },
+  {
+   "session_source_medium": "daum / organic",
+   "new_vs_returning": "new",
+   "sessions": 5,
+   "engaged_sessions": 3,
+   "average_session_duration": 265.16,
+   "conversions": 2
+  },
+  {
+   "session_source_medium": "daum / organic",
+   "new_vs_returning": "returning",
+   "sessions": 2,
+   "engaged_sessions": 1,
+   "average_session_duration": 202.92,
+   "conversions": 2
+  }
+ ],
+ "dev": [
+  {
+   "devicecategory": "desktop",
+   "sessions": 180,
+   "conversions": 3
+  },
+  {
+   "devicecategory": "mobile",
+   "sessions": 95,
+   "conversions": 2
+  },
+  {
+   "devicecategory": "tablet",
+   "sessions": 4,
+   "conversions": 0
+  }
+ ],
+ "pg": [
+  {
+   "pagetitle": "홈",
+   "screen_page_views": 320,
+   "active_users": 140
+  },
+  {
+   "pagetitle": "서비스 소개",
+   "screen_page_views": 210,
+   "active_users": 120
+  },
+  {
+   "pagetitle": "가격 안내",
+   "screen_page_views": 150,
+   "active_users": 90
+  },
+  {
+   "pagetitle": "문의하기",
+   "screen_page_views": 80,
+   "active_users": 60
+  },
+  {
+   "pagetitle": "블로그 · GA4 시작하기",
+   "screen_page_views": 75,
+   "active_users": 70
+  },
+  {
+   "pagetitle": "블로그 · UTM 가이드",
+   "screen_page_views": 60,
+   "active_users": 55
+  },
+  {
+   "pagetitle": "회사 소개",
+   "screen_page_views": 40,
+   "active_users": 35
+  },
+  {
+   "pagetitle": "FAQ",
+   "screen_page_views": 30,
+   "active_users": 25
+  },
+  {
+   "pagetitle": "이벤트",
+   "screen_page_views": 22,
+   "active_users": 20
+  },
+  {
+   "pagetitle": "채용",
+   "screen_page_views": 12,
+   "active_users": 10
+  },
+  {
+   "pagetitle": "개인정보처리방침",
+   "screen_page_views": 5,
+   "active_users": 5
+  }
+ ],
+ "costG": [
+  {
+   "date": "2026-10-26",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 29565,
+   "sessions": 8,
+   "engaged_sessions": 6,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-26",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 20683,
+   "sessions": 5,
+   "engaged_sessions": 5,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-27",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 11724,
+   "sessions": 11,
+   "engaged_sessions": 3,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-27",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 27612,
+   "sessions": 11,
+   "engaged_sessions": 1,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-28",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 14767,
+   "sessions": 4,
+   "engaged_sessions": 6,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-28",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 21986,
+   "sessions": 8,
+   "engaged_sessions": 2,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-29",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 12300,
+   "sessions": 11,
+   "engaged_sessions": 5,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-29",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 15802,
+   "sessions": 6,
+   "engaged_sessions": 5,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-30",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 12844,
+   "sessions": 9,
+   "engaged_sessions": 6,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-30",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 11550,
+   "sessions": 11,
+   "engaged_sessions": 4,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-31",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 28953,
+   "sessions": 3,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-31",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 20474,
+   "sessions": 7,
+   "engaged_sessions": 2,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-01",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 24829,
+   "sessions": 8,
+   "engaged_sessions": 4,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-01",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 16453,
+   "sessions": 8,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-02",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 8347,
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-02",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 16066,
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-03",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 24997,
+   "sessions": 3,
+   "engaged_sessions": 4,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-03",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 16272,
+   "sessions": 4,
+   "engaged_sessions": 6,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 17731,
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 19218,
+   "sessions": 8,
+   "engaged_sessions": 1,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-05",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 17970,
+   "sessions": 10,
+   "engaged_sessions": 4,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-05",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 7782,
+   "sessions": 5,
+   "engaged_sessions": 2,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-06",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 5902,
+   "sessions": 5,
+   "engaged_sessions": 5,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-06",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 26491,
+   "sessions": 5,
+   "engaged_sessions": 5,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-07",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 20543,
+   "sessions": 8,
+   "engaged_sessions": 2,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-07",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 22966,
+   "sessions": 5,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-08",
+   "session_google_ads_campaign_name": "example_brand_search",
+   "advertiser_ad_cost": 28801,
+   "sessions": 4,
+   "engaged_sessions": 5,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-08",
+   "session_google_ads_campaign_name": "example_generic_search",
+   "advertiser_ad_cost": 9562,
+   "sessions": 9,
+   "engaged_sessions": 2,
+   "conversions": 0
+  }
+ ],
+ "costN": [
+  {
+   "date": "2026-10-26",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 3458,
+   "sessions": 4,
+   "engaged_sessions": 2,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-27",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 11211,
+   "sessions": 3,
+   "engaged_sessions": 5,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-28",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 7249,
+   "sessions": 6,
+   "engaged_sessions": 4,
+   "conversions": 0
+  },
+  {
+   "date": "2026-10-29",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 3997,
+   "sessions": 7,
+   "engaged_sessions": 3,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-30",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 13853,
+   "sessions": 6,
+   "engaged_sessions": 5,
+   "conversions": 1
+  },
+  {
+   "date": "2026-10-31",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 11219,
+   "sessions": 3,
+   "engaged_sessions": 5,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-01",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 11577,
+   "sessions": 6,
+   "engaged_sessions": 1,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-02",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 6000,
+   "sessions": 6,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-03",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 5823,
+   "sessions": 3,
+   "engaged_sessions": 4,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-04",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 12117,
+   "sessions": 2,
+   "engaged_sessions": 3,
+   "conversions": 1
+  },
+  {
+   "date": "2026-11-05",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 4738,
+   "sessions": 6,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-06",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 6134,
+   "sessions": 4,
+   "engaged_sessions": 1,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-07",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 11318,
+   "sessions": 5,
+   "engaged_sessions": 5,
+   "conversions": 0
+  },
+  {
+   "date": "2026-11-08",
+   "session_source_medium": "naver.com / cpc",
+   "session_manual_campaign_name": "example_powerlink",
+   "advertiser_ad_cost": 4038,
+   "sessions": 5,
+   "engaged_sessions": 3,
+   "conversions": 0
+  }
+ ]
+}

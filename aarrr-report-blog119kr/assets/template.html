@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<style>
+:root{
+  --bg:#f4f5f7; --card:#fff; --ink:#1f2328; --sub:#5f6670; --line:#e3e6ea; --grid:#eef0f3;
+  --new:#1a73e8; --ret:#d0342c; --ns:#b3bac4;
+  --acq:#f57c00; --act:#388e3c; --rsec:#c2185b; --rev:#1e88e5; --ref:#8e24aa;
+  --up:#1e8e3e; --down:#d93025;
+  --heatA:16,167,183; --heatB:233,30,140;
+  --good:#e6f4ea; --goodT:#137333; --bad:#fce8e6; --badT:#c5221f; --mid:#fef7e0; --midT:#8a6100;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#15171a; --card:#1e2125; --ink:#e8eaed; --sub:#9aa0a6; --line:#33373c; --grid:#2a2d31;
+    --new:#8ab4f8; --ret:#f07a70; --ns:#5f6670; --up:#81c995; --down:#f28b82;
+    --good:#1e3a28; --goodT:#81c995; --bad:#42201e; --badT:#f28b82; --mid:#3d3519; --midT:#fdd663; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Google Sans Text","Noto Sans KR",system-ui,-apple-system,sans-serif;font-size:13px}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 40px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:14px}
+.logo{font-weight:800;font-size:22px;letter-spacing:.5px;line-height:1}
+.logo span:nth-child(1){color:var(--acq)}.logo span:nth-child(2){color:var(--act)}.logo span:nth-child(3){color:var(--rsec)}.logo span:nth-child(4){color:var(--rev)}.logo span:nth-child(5){color:var(--ref)}
+.logo small{display:block;font-size:13px;font-weight:600;color:var(--ink);letter-spacing:0;margin-top:4px}
+.eyebrow{font-size:12px;color:var(--sub);margin-bottom:6px}
+.datebox{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 14px;box-shadow:0 1px 3px rgba(0,0,0,.08);text-align:right}
+.datebox b{font-size:15px}.datebox div{font-size:11px;color:var(--sub);margin-top:2px}
+.notice{background:var(--bad);color:var(--badT);border-radius:6px;padding:8px 12px;margin:0 0 12px;font-size:12px}
+.sec{margin-top:14px}
+.bar{color:#fff;text-align:center;font-weight:600;padding:8px;border-radius:4px 4px 0 0;letter-spacing:.3px}
+.body{background:var(--card);border:1px solid var(--line);border-top:0;border-radius:0 0 6px 6px;padding:14px;display:grid;gap:14px}
+.acq .bar{background:var(--acq)} .act .bar{background:var(--act)} .ret .bar{background:var(--rsec)} .rev .bar{background:var(--rev)} .ref .bar{background:var(--ref)}
+.g-acq{grid-template-columns:1.3fr 1fr} .g-act{grid-template-columns:1fr 1.15fr 1.1fr} .g-ret{grid-template-columns:.9fr 2fr}
+.g-rev{grid-template-columns:.6fr 2fr .9fr} .g-ref{grid-template-columns:1fr 1.6fr}
+@media (max-width:900px){ .g-acq,.g-act,.g-ret,.g-rev,.g-ref{grid-template-columns:1fr} }
+.kgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;align-content:start}
+.kgrid.k5{grid-template-columns:repeat(5,1fr)} @media (max-width:900px){.kgrid.k5{grid-template-columns:1fr 1fr}}
+.kgrid.k1{grid-template-columns:1fr}
+.k .t{font-size:12px;color:var(--sub)} .k .v{font-size:26px;font-weight:500;line-height:1.15;margin:2px 0 1px;font-variant-numeric:tabular-nums}
+.k .d{font-size:12px;font-weight:600} .up{color:var(--up)} .down{color:var(--down)} .flat{color:var(--sub)}
+.k svg{display:block;width:100%;height:28px;margin-top:4px}
+.ret .k .v{color:var(--ret)}
+h4{margin:0 0 8px;font-size:14px;font-weight:600}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--sub);margin-bottom:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+th{background:var(--grid);text-align:right;font-weight:600;padding:7px 8px;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
+tfoot td{font-weight:700;border-bottom:0}
+td small{display:block;color:var(--sub);font-size:11px}
+.pager{text-align:right;color:var(--sub);font-size:11px;margin-top:6px}
+.tag{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.cpa-good{background:var(--good);color:var(--goodT);font-weight:600}.cpa-bad{background:var(--bad);color:var(--badT);font-weight:600}.cpa-mid{background:var(--mid);color:var(--midT)}
+.hint{font-size:11px;color:var(--sub);margin-top:6px}
+.chart svg{width:100%;display:block}
+footer{margin-top:18px;font-size:11px;color:var(--sub);line-height:1.6}
+.tip{position:fixed;pointer-events:none;background:rgba(32,33,36,.92);color:#fff;font-size:11px;padding:5px 8px;border-radius:4px;display:none;z-index:9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow" id="eyebrow"></div>
+      <div class="logo"><span>A</span><span>A</span><span>R</span><span>R</span><span>R</span><small>FUNNEL REPORT</small></div>
+    </div>
+    <div class="datebox"><b id="curLbl"></b><div id="prevLbl"></div></div>
+  </header>
+  <p class="notice" id="notice" hidden></p>
+
+  <section class="sec acq"><div class="bar">ACQUISITION (유입)</div>
+    <div class="body g-acq">
+      <div><div class="legend"><span><i style="background:var(--new)"></i>새 방문자</span><span><i style="background:var(--ret)"></i>재방문자</span><span><i style="background:var(--ns)"></i>(not set)</span></div>
+        <div class="chart" id="acqBars"></div></div>
+      <div><div class="kgrid" id="acqK"></div><h4 style="margin-top:14px">기기별 세션수</h4><div class="chart" id="devDonut"></div></div>
+    </div></section>
+
+  <section class="sec act"><div class="bar">ACTIVATION (행동)</div>
+    <div class="body g-act">
+      <div class="kgrid" id="actK"></div>
+      <div><table id="pages"></table><div class="pager" id="pagesPg"></div></div>
+      <div><div class="legend"><span><i style="background:var(--act)"></i>세션수</span><span><i style="background:rgba(var(--heatA),.35)"></i>참여율</span></div>
+        <div class="chart" id="actCombo"></div>
+        <h4 style="margin-top:10px">세션 → 참여 세션 → 전환</h4><div class="chart" id="funnel"></div></div>
+    </div></section>
+
+  <section class="sec ret"><div class="bar">RETENTION (returning 데이터)</div>
+    <div class="body g-ret">
+      <div><div class="legend"><span><i style="background:var(--new)"></i>새 방문자</span><span><i style="background:var(--ret)"></i>재방문자</span><span><i style="background:var(--ns)"></i>(not set)</span></div><div class="chart" id="retPie"></div></div>
+      <div class="kgrid k5" id="retK"></div>
+    </div></section>
+
+  <section class="sec rev"><div class="bar" id="revBar">REVENUE → CPA (광고비 ÷ 전환)</div>
+    <div class="body g-rev">
+      <div class="kgrid k1" id="revK"></div>
+      <div><table id="cpaT"></table><div class="pager" id="cpaPg"></div>
+        <div class="hint" id="cpaLeg">* 범례 <span class="tag" style="background:var(--badT)"></span>개선필요(전환 0 또는 CPA ≥ 평균×1.5) <span class="tag" style="background:var(--goodT);margin-left:8px"></span>효율우수·증액후보(CPA ≤ 평균×0.7) <span class="tag" style="background:var(--midT);margin-left:8px"></span>기타</div></div>
+      <div><h4 id="revDonutT">광고비별 세션 소스/매체</h4><div class="chart" id="revDonut"></div></div>
+    </div></section>
+
+  <section class="sec ref"><div class="bar">REFERRAL (referral + organic)</div>
+    <div class="body g-ref">
+      <div class="kgrid" id="refK"></div>
+      <div><table id="refT"></table><div class="pager" id="refPg"></div></div>
+    </div></section>
+
+  <footer id="foot"></footer>
+</div>
+<div class="tip" id="tip"></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = id => document.getElementById(id);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const nf = n => n==null?'–':Math.round(n).toLocaleString('ko-KR');
+const dur = s => { s=Math.round(s); const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60; return [h,m,x].map(v=>String(v).padStart(2,'0')).join(':'); };
+const fmt = (v,f) => v==null?'–':f==='pct'?(v*100).toFixed(2)+'%':f==='dur'?dur(v):f==='won'?nf(v)+'원':f==='dec'?v.toFixed(2):nf(v);
+const md = s => s.slice(5).replace('-','.');
+$('eyebrow').textContent = D.label;
+$('curLbl').textContent = D.cur[0].replaceAll('-','. ')+'. – '+D.cur[1].replaceAll('-','. ')+'.';
+$('prevLbl').textContent = '비교: '+md(D.prev[0])+' – '+md(D.prev[1])+' · 기준일 '+D.asof;
+if (D.blocked){ const n=$('notice'); n.hidden=false; n.textContent='비교 기간('+md(D.prev[0])+'~'+md(D.prev[1])+')이 '+D.blockNote+' 이전을 포함해 전환·전환율·CPA 증감은 비교 불가로 표시합니다.'; }
+const tip=$('tip'); function showTip(e,h){tip.innerHTML=h;tip.style.display='block';tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px'} function hideTip(){tip.style.display='none'}
+const convF = ['주요 이벤트(전환)','세션 전환율','광고 전환','세션 주요 이벤트 비율'];
+function delta(k){
+  if (D.blocked && (convF.includes(k.t) || k.t.startsWith('CPA'))) return '<span class="flat">비교 불가</span>';
+  if (!k.p) return '<span class="flat">–</span>';
+  const r = k.v/k.p-1, good = k.inv ? r<0 : r>0;
+  const cls = k.neutral ? 'flat' : Math.abs(r)<0.0005 ? 'flat' : good ? 'up' : 'down';
+  return `<span class="${cls}">${r>=0?'▲':'▼'} ${Math.abs(r*100).toFixed(1)}%</span>`;
+}
+function spark(vals,color){
+  if(!vals||vals.length<3) return '';
+  const w=160,h=28,mx=Math.max(...vals)||1,mn=Math.min(0,...vals);
+  const pts=vals.map((v,i)=>[i*(w/(vals.length-1)), h-2-(v-mn)/(mx-mn||1)*(h-6)]);
+  const p=pts.map(p=>p.join(',')).join(' ');
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><polygon points="0,${h} ${p} ${w},${h}" fill="${color}" opacity=".15"/><polyline points="${p}" fill="none" stroke="${color}" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>`;
+}
+function kpis(el, list, color){
+  $(el).innerHTML = list.map(k=>`<div class="k"><div class="t">${k.t}</div><div class="v">${fmt(k.v,k.f)}</div><div class="d">${delta(k)}</div>${spark(k.sp,color)}</div>`).join('');
+}
+function donut(el, items, colors, opt={}){
+  const tot=items.reduce((a,b)=>a+b.v,0); const R=60,r=opt.pie?0:38,cx=70,cy=70; let a=-Math.PI/2; let paths='';
+  items.forEach((it,i)=>{ const ang=Math.min(it.v/tot*Math.PI*2, Math.PI*2-0.0001); if(ang<=0) return; const a2=a+ang, large=ang>Math.PI?1:0;
+    const p=(rad,ang)=>[cx+rad*Math.cos(ang),cy+rad*Math.sin(ang)];
+    const [x1,y1]=p(R,a),[x2,y2]=p(R,a2),[x3,y3]=p(r,a2),[x4,y4]=p(r,a);
+    const d = r? `M${x1},${y1}A${R},${R} 0 ${large} 1 ${x2},${y2}L${x3},${y3}A${r},${r} 0 ${large} 0 ${x4},${y4}Z` : `M${cx},${cy}L${x1},${y1}A${R},${R} 0 ${large} 1 ${x2},${y2}Z`;
+    const pct=(it.v/tot*100).toFixed(1)+'%'; const [lx,ly]=p((R+(r||0))/2+ (r?0:6),a+ang/2);
+    paths+=`<path d="${d}" fill="${colors[i%colors.length]}" stroke="var(--card)" stroke-width="1.5" data-h="${it.k}<br>${opt.money?nf(it.v)+'원':nf(it.v)} (${pct})${it.extra||''}"/>`;
+    if(it.v/tot>0.06) paths+=`<text x="${lx}" y="${ly}" text-anchor="middle" dominant-baseline="middle" font-size="10" fill="#fff" font-weight="600" pointer-events="none">${pct}</text>`;
+    a=a2; });
+  const leg=items.map((it,i)=>`<div style="display:flex;align-items:center;gap:6px;margin:3px 0;font-size:11px"><i style="width:9px;height:9px;border-radius:50%;background:${colors[i%colors.length]};flex:none"></i><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${it.k}</span></div>`).join('');
+  $(el).innerHTML=`<div style="display:flex;align-items:center;gap:10px"><svg viewBox="0 0 140 140" style="width:140px;flex:none">${paths}</svg><div style="min-width:0">${leg}</div></div>`;
+  $(el).querySelectorAll('path').forEach(p=>{p.onmousemove=e=>showTip(e,p.dataset.h);p.onmouseleave=hideTip});
+}
+const C = { new:css('--new'), ret:css('--ret'), ns:css('--ns') };
+const PAL = ['#1a73e8','#12b5cb','#e8710a','#f9ab00','#9334e6','#7cb342','#e52592','#5f6368'];
+
+/* ACQUISITION */
+kpis('acqK', D.acq.kpi, css('--acq'));
+(function(){
+  const B=D.acq.bars, mx=Math.max(...B.map(b=>b.new+b.returning+b["(not set)"])), W=560, rowH=30, L=150, H=B.length*rowH+24;
+  let s=''; const ticks=4, rawS=mx/ticks, mag=10**Math.floor(Math.log10(rawS||1)), step=Math.ceil(rawS/mag)*mag||1;
+  for(let i=0;i<=ticks;i++){ const x=L+(W-L-10)*(i*step)/(step*ticks); s+=`<line x1="${x}" x2="${x}" y1="0" y2="${H-20}" stroke="var(--grid)"/><text x="${x}" y="${H-6}" font-size="10" fill="var(--sub)" text-anchor="middle">${nf(i*step)}</text>`; }
+  const sc=v=>(W-L-10)*v/(step*ticks);
+  B.forEach((b,i)=>{ let x=L; const y=i*rowH+6;
+    s+=`<text x="${L-6}" y="${y+10}" font-size="11" fill="var(--ink)" text-anchor="end">${b.label.length>24?b.label.slice(0,23)+'…':b.label}</text>`;
+    [['new',C.new,'새 방문자'],['returning',C.ret,'재방문자'],['(not set)',C.ns,'(not set)']].forEach(([k,col,lab])=>{ const w=sc(b[k]); if(w>0) s+=`<rect x="${x}" y="${y}" width="${w}" height="16" fill="${col}" data-h="${b.label}<br>${lab}: ${nf(b[k])}"/>`; x+=w; });
+    s+=`<text x="${x+4}" y="${y+12}" font-size="10" fill="var(--sub)">${nf(b.new+b.returning+b['(not set)'])}</text>`; });
+  $('acqBars').innerHTML=`<svg viewBox="0 0 ${W+40} ${H}">${s}</svg>`;
+  $('acqBars').querySelectorAll('rect').forEach(p=>{p.onmousemove=e=>showTip(e,p.dataset.h);p.onmouseleave=hideTip});
+})();
+donut('devDonut', D.acq.dev.map(d=>({k:d.k, v:d.s, extra:`<br>전환 ${d.c}건 · 전환율 ${(d.c/d.s*100).toFixed(2)}%`})), ['#1a73e8','#12b5cb','#e52592','#e8710a']);
+
+/* ACTIVATION */
+kpis('actK', D.act.kpi, css('--act'));
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+$('pages').innerHTML = '<thead><tr><th>인기 페이지 (페이지 제목)</th><th>조회수 ▾</th><th>사용자</th></tr></thead><tbody>'+D.act.pages.map(p=>`<tr><td title="${esc(p.k)}">${esc(p.k.length>36?p.k.slice(0,35)+'…':p.k)}</td><td>${nf(p.v)}</td><td>${nf(p.u)}</td></tr>`).join('')+`</tbody><tfoot><tr><td>총 합계</td><td>${nf(D.act.pages_total)}</td><td></td></tr></tfoot>`;
+$('pagesPg').textContent = '1 - '+D.act.pages.length+(D.pageNote?' · '+D.pageNote:'');
+(function(){ const A=D.act.daily, W=380,H=180,L=36,Rr=36,T=10,Bm=24, n=A.length, bw=(W-L-Rr)/n;
+  const ms=Math.max(...A.map(a=>a.s))*1.15; let s='';
+  for(let i=0;i<=4;i++){ const y=T+(H-T-Bm)*i/4; s+=`<line x1="${L}" x2="${W-Rr}" y1="${y}" y2="${y}" stroke="var(--grid)"/><text x="${L-4}" y="${y+3}" font-size="9" fill="var(--sub)" text-anchor="end">${nf(ms*(1-i/4))}</text><text x="${W-Rr+4}" y="${y+3}" font-size="9" fill="var(--sub)">${Math.round(80*(1-i/4))}%</text>`; }
+  A.forEach((a,i)=>{ const h=(H-T-Bm)*a.er/0.8; s+=`<rect x="${L+i*bw+bw*.15}" y="${H-Bm-h}" width="${bw*.7}" height="${h}" fill="rgba(${css('--heatA')},.35)" data-h="${a.d}<br>세션 ${nf(a.s)} · 참여율 ${(a.er*100).toFixed(1)}%"/><text x="${L+i*bw+bw/2}" y="${H-8}" font-size="9" fill="var(--sub)" text-anchor="middle">${a.d}</text>`; });
+  const pts=A.map((a,i)=>[L+i*bw+bw/2, T+(H-T-Bm)*(1-a.s/ms)]);
+  s+=`<polyline points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="${css('--act')}" stroke-width="2"/>`+pts.map(p=>`<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${css('--act')}"/>`).join('');
+  $('actCombo').innerHTML=`<svg viewBox="0 0 ${W} ${H}">${s}</svg>`;
+  $('actCombo').querySelectorAll('rect').forEach(p=>{p.onmousemove=e=>showTip(e,p.dataset.h);p.onmouseleave=hideTip});
+})();
+(function(){ const F=D.act.funnel, lab=['세션','참여 세션','전환'], mx=F.cur[0], W=380, rowH=26; let s='';
+  F.cur.forEach((v,i)=>{ const y=i*rowH+2, w=(W-150)*v/mx, wp=(W-150)*F.prev[i]/mx;
+    s+=`<text x="0" y="${y+13}" font-size="11" fill="var(--ink)">${lab[i]}</text><rect x="70" y="${y}" width="${Math.max(w,2)}" height="18" fill="${css('--act')}" opacity="${1-i*.25}"/><line x1="${70+wp}" x2="${70+wp}" y1="${y-2}" y2="${y+20}" stroke="var(--sub)" stroke-dasharray="2,2"/><text x="${70+Math.max(w,wp)+6}" y="${y+13}" font-size="11" fill="var(--ink)">${nf(v)}${i?` <tspan fill="var(--sub)">(${(v/F.cur[0]*100).toFixed(1)}%)</tspan>`:''}</text>`; });
+  $('funnel').innerHTML=`<svg viewBox="0 0 ${W} ${rowH*3}">${s}</svg><div class="hint">점선 = 비교 기간 값</div>`;
+})();
+
+/* RETENTION */
+donut('retPie', D.ret.pie.map(p=>({k:p.k==='new'?'새 방문자':p.k==='returning'?'재방문자':'(not set)', v:p.s})), [C.new,C.ret,C.ns], {pie:true});
+kpis('retK', D.ret.kpi, C.ret);
+
+/* REVENUE -> CPA */
+kpis('revK', D.rev.kpi, css('--rev'));
+if (D.rev.mode==='rate') {
+  $('revBar').textContent='REVENUE → 세션 주요 이벤트 비율 (광고비 데이터 없음)'; $('cpaLeg').hidden=true; $('revDonutT').textContent='전환 기여 세션 소스/매체';
+  const R=D.rev.rows, mxc=Math.max(1,...R.map(r=>r.c)), mxr=Math.max(...R.map(r=>r.cr))||1;
+  const heat=(v,m,rgb)=>`background:rgba(${rgb},${v? (0.08+0.55*v/m):0})`;
+  let h='<thead><tr><th>세션 소스/매체</th><th>세션</th><th>참여율</th><th>전환 ▾</th><th>세션 주요 이벤트 비율</th><th>비율 증감</th></tr></thead><tbody>';
+  R.forEach(r=>{ const dc = D.blocked?'비교 불가': r.dcr==null?'–':`<span class="${r.dcr>=0?'up':'down'}">${r.dcr>=0?'▲':'▼'} ${Math.abs(r.dcr*100).toFixed(2)}%p</span>`;
+    h+=`<tr><td>${r.sm}</td><td>${nf(r.s)}</td><td>${(r.er*100).toFixed(1)}%</td><td style="${heat(r.c,mxc,css('--heatA'))}">${r.c}</td><td style="${heat(r.cr,mxr,css('--heatB'))}">${(r.cr*100).toFixed(2)}%</td><td>${dc}</td></tr>`; });
+  const T=D.rev.total; h+=`</tbody><tfoot><tr><td>총 합계</td><td>${nf(T.s)}</td><td>${(T.er*100).toFixed(1)}%</td><td>${T.c}</td><td>${(T.cr*100).toFixed(2)}%</td><td></td></tr></tfoot>`;
+  $('cpaT').innerHTML=h; $('cpaPg').textContent='1 - '+R.length+' / '+D.rev.nrows;
+} else {
+(function(){ const R=D.rev.rows, mxc=Math.max(...R.map(r=>r.c)), mxr=Math.max(...R.map(r=>r.cr));
+  const heat=(v,m,rgb)=>`background:rgba(${rgb},${m? (0.08+0.55*v/m):0})`;
+  let h='<thead><tr><th>세션 소스/매체 · 캠페인</th><th>광고비</th><th>세션</th><th>참여율</th><th>전환</th><th>전환율</th><th>CPA ▴</th><th>CPA 증감</th></tr></thead><tbody>';
+  R.forEach(r=>{ const dc = D.blocked?'비교 불가': r.dcpa==null?'–':`<span class="${r.dcpa<0?'up':'down'}">${r.dcpa>=0?'▲':'▼'} ${Math.abs(r.dcpa*100).toFixed(1)}%</span>`;
+    h+=`<tr><td>${r.camp}<small>${r.sm}</small></td><td>${nf(r.cost)}</td><td>${nf(r.s)}</td><td>${(r.er*100).toFixed(1)}%</td><td style="${heat(r.c,mxc,css('--heatA'))}">${r.c}</td><td style="${heat(r.cr,mxr,css('--heatB'))}">${(r.cr*100).toFixed(2)}%</td><td class="cpa-${r.tag}">${r.cpa==null?'전환 0':nf(r.cpa)}</td><td>${dc}</td></tr>`; });
+  const T=D.rev.total; h+=`</tbody><tfoot><tr><td>총 합계 (광고비 > 0 전체)</td><td>${nf(T.cost)}</td><td>${nf(T.s)}</td><td></td><td>${T.c}</td><td>${(T.c/T.s*100).toFixed(2)}%</td><td>${nf(T.cpa)}</td><td></td></tr></tfoot>`;
+  $('cpaT').innerHTML=h; $('cpaPg').textContent='1 - '+R.length+' / '+D.rev.nrows+' · 평균 CPA '+nf(D.rev.avg)+'원'+(D.prefix?' · 캠페인 접두어 '+D.prefix+' 생략':'');
+})();
+}
+donut('revDonut', D.rev.donut.map(d=>({k:d.k, v:d.v})), PAL, {money:D.rev.mode!=='rate'});
+
+/* REFERRAL */
+kpis('refK', D.ref.kpi, css('--ref'));
+(function(){ const R=D.ref.rows, mxc=Math.max(1,...R.map(r=>r.c)), mxr=Math.max(...R.map(r=>r.cr))||1;
+  const heat=(v,m,rgb)=>`background:rgba(${rgb},${v? (0.08+0.55*v/m):0})`;
+  let h='<thead><tr><th>세션 소스/매체</th><th>세션 ▾</th><th>참여율</th><th>평균 세션 시간</th><th>전환</th><th>전환율</th></tr></thead><tbody>';
+  R.forEach(r=>{ h+=`<tr><td>${r.sm}</td><td>${nf(r.s)}</td><td>${(r.er*100).toFixed(1)}%</td><td>${dur(r.dur)}</td><td style="${heat(r.c,mxc,css('--heatA'))}">${r.c}</td><td style="${heat(r.cr,mxr,css('--heatB'))}">${(r.cr*100).toFixed(2)}%</td></tr>`; });
+  const T=D.ref.total; h+=`</tbody><tfoot><tr><td>총 합계</td><td>${nf(T.s)}</td><td>${(T.er*100).toFixed(1)}%</td><td>${dur(T.dur)}</td><td>${T.c}</td><td>${(T.cr*100).toFixed(2)}%</td></tr></tfoot>`;
+  $('refT').innerHTML=h; $('refPg').textContent='1 - '+R.length+' / '+D.ref.nrows;
+})();
+
+$('foot').innerHTML = D.footer.join('<br>');
+</script>
+</body>
+</html>
+
