@@ -7,7 +7,7 @@ assets/template.html에 데이터를 채운 HTML 리포트를 만든다.
 사용법:
     python3 scripts/build_report.py config.json results.json out.html
 
-- results.json의 행은 Windsor.ai 형식(snake_case, 예: active_users)이나
+- results.json의 행은 snake_case(예: active_users, 일부 MCP·빅쿼리 템플릿)나
   GA4 Data API 형식(camelCase, 예: activeUsers) 모두 받는다.
 - 수치는 손으로 옮기지 말고 조회 결과를 그대로 저장해 이 스크립트로 집계한다.
 """

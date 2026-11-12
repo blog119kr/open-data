@@ -1,4 +1,5 @@
 {
+  "connector": "mcp",
   "property_name": "예시 쇼핑몰",
   "property_id": "123456789",
   "service": null,
